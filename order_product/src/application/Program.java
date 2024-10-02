@@ -31,7 +31,7 @@ public class Program {
 		System.out.println("Enter order data:");
 		System.out.print("Status: ");
 		String orderStatus = sc.next();	
-		// valueOf converts the String type to the OrderStatus type
+		// valueOf converts the String type to the OrderStatus enum type
 		Order order = new Order(new Date(), OrderStatus.valueOf(orderStatus), client);
 		System.out.print("How many items to this order? ");
 		int n = sc.nextInt();
