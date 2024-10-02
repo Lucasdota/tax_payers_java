@@ -36,7 +36,7 @@ public class Program {
 				Double price = sc.nextDouble();
 				System.out.print("Customs fee: ");
 				Double fee = sc.nextDouble();
-				ImportedProduct product = new ImportedProduct(name, price, fee);
+				Product product = new ImportedProduct(name, price, fee);
 				products.add(product);
 			} else if (type.charAt(0) == 'c') {
 				System.out.print("Name: ");
@@ -53,7 +53,7 @@ public class Program {
 				sc.nextLine();
 				System.out.print("Manufacture date (DD/MM/YYYY): ");
 				Date date = sdf.parse(sc.nextLine());
-				UsedProduct product = new UsedProduct(name, price, date);
+				Product product = new UsedProduct(name, price, date);
 				products.add(product);
 			}
 		}
